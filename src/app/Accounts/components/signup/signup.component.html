@@ -1,0 +1,38 @@
+<heading-component [headingMessage]="'SignUp'"></heading-component>
+<table>
+    <tr>
+            <td>Username : </td>
+            <td><input type="text"  [(ngModel)]="username"></td>
+            <td><output>{{username}}</output></td>
+    </tr>
+    <tr>
+        <td>Password : </td>
+        <td><input type="text" [(ngModel)] ="password" ></td>
+</tr>
+<tr>
+    <td>Retype Password : </td>
+    <td><input type="text" [(ngModel)]="retypePassword"></td>
+</tr>
+<tr>
+    <td>Email Id : </td>
+    <td><input type="text" [(ngModel)]="emailId"></td>
+</tr>
+<tr>
+    <td>Gender : </td>
+    <td>
+        <select name="Gender"  #genderComboBox onchange="onGenderChanged(genderComboBox.value)">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>Age : </td>
+    <td><input type="text" [(ngModel)]="age"></td>
+</tr>
+<tr>
+    <td><button (click)="signUpClick()">SignUp</button></td>
+    <td><button (click)="clear()">Clear</button></td>
+</tr>
+</table>

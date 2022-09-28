@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <td>Height</td>
+        <td>
+            <input type="text" #heightTextBox (input)="onHeightChanged(heightTextBox.value)" [value]="height">
+        </td>
+    </tr>
+    <tr>
+        <td>Weight</td>
+        <td>
+            <!-- Two way binding is done here , the text box has a property called value which can be binded with the component property-->
+            <input type="text" #weightTextBox (input)="onWeightChanged(weightTextBox.value)" [value]="weight">
+        </td>
+    </tr>
+    <tr>
+        <td><button (click)="calculateBmi()">CalculateBmi</button></td>
+        <td>
+            <button (click)="clear()">Clear</button>
+        </td>
+    </tr>
+    <table>
+

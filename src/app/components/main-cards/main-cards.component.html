@@ -1,0 +1,27 @@
+<mat-card title="Login">
+    <mat-card-content>
+        <!-- <mat-toolbar color="accent">
+            <mat-toolbar-row>
+                <span>Logged in Successfully</span>
+              </mat-toolbar-row>
+            </mat-toolbar> -->
+            <section>
+                <div class="example-button-row">
+                    <a mat-stroked-button color="primary" routerLink="./calculators">Calculators</a>
+                    </div>
+                    <div class="example-button-row">
+                    <a mat-stroked-button color="primary" aria-label="./doctors">Doctors</a>
+                </div>
+                <div class="example-button-row">
+                    <a mat-stroked-button color="primary" aria-label="./appointments">Appointments</a>
+                </div>
+                <div class="example-button-row">
+                    <a mat-stroked-button color="primary" aria-label="./health-tips">Health Tips</a>
+                </div>
+                <div class="example-button-row">
+                    <a mat-stroked-button color="primary" aria-label="./logout">LogOut {{currentUser}}</a>
+                </div>
+              </section>
+    </mat-card-content>
+</mat-card>
+<router-outlet></router-outlet>

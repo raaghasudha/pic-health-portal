@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>HomePage</mat-card-title>
+    <mat-card-content>
+        <table>
+            <tr>
+                <td>
+                    <a mat-raised-button color="primary" [routerLink]="'./login'">Login</a>
+                </td>
+                <td>
+                    <a mat-raised-button color="primary" href="" target="_blank">SignUp</a>
+                </td>
+            </tr>
+        </table>        
+    </mat-card-content>
+    <mat-card-content>
+        <router-outlet></router-outlet>
+    </mat-card-content>
+</mat-card>
